@@ -2,7 +2,7 @@
 
 ## potData 
 
-This folder contains some data on the 3 potentiometers that works along with a few relevant plots for each one. The python notebook  potscratch2.ipynb contains code that generated the respective regressions. 
+This folder contains some data on the 3 potentiometers that works along with a few relevant plots for each one. Note that the working ones are given number names while the currently unoperable ones are given letter names. The python notebook  potscratch2.ipynb contains code that generated the respective regressions. 
 
 ## potCode.ino
 
