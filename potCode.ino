@@ -20,7 +20,7 @@ void setup() {
       modelWeights = {-1.4290E-10, 2.5670E-07, -9.1671E-05, 7.3302E-02, -49.437E1};
       break;
     case 3:
-      modelWeights = [-8.196E-11, 1.2784E-07, -8.2524E-06, 5.3073e-02, -47.450E1];
+      modelWeights = {-8.196E-11, 1.2784E-07, -8.2524E-06, 5.3073e-02, -47.450E1};
       break;
     default:
       modelWeights = {0,0,0,0,0}
