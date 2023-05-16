@@ -6,7 +6,7 @@ int val = 0;
 
 
 const int analogPin = A3; // Pin 5.2 
-const int potNum = 1; //Check potentiometer label
+const int potNum = 1; //Check potentiometer label -- unique weights for each pot
 
 void setup() {
   ECE3_Init();
@@ -37,10 +37,10 @@ float model(int X) { //returns true distance as a function of potentiometer read
 
 void loop() {
   ECE3_read_IR(sensorValues);
-  val = analogRead(analogPin); 
-  Serial.print(model(val));
-  for (unsigned char i = 0; i < 8; i++) {
-    Serial.print('\t');
+  val = analogRead(analogPin); //Raw potentiometer reading
+  Serial.print(model(val)); //Printing distance from pot regression
+  for (unsigned char i = 0; i < 8; i++) { //Printing sensor values
+    Serial.print('\t'); //tab spaced but can make comma-spaced if need csv file
     Serial.print(sensorValues[i]);
     }
    Serial.print('\n');
