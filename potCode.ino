@@ -11,7 +11,6 @@ const int potNum = 1; //Check potentiometer label
 void setup() {
   ECE3_Init();
   Serial.begin(9600);
-  Serial.println("pot, reg, sens1,sens2,sens3,sens4,sens5,sens6,sens7,sens8");
   switch(potNum) { //potentiometer regression weights
     case 1:
       coeff = {-5.5956E-11, 1.4965E-08, 1.5342E-04, -2.3004E-02, -5.1778E1};
